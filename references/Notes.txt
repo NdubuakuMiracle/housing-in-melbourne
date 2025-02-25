@@ -1,0 +1,65 @@
+About the Dataset
+
+Update 06/08/2018 – The Melbourne housing market has cooled off. Key questions to explore:
+1.	When did the slowdown start?
+2.	What variables indicated the slowdown? Changes in price, unsold properties, rental shifts, or regional differences?
+3.	Could it have been predicted?
+4.	Should I wait before buying a two-bedroom apartment in Northcote?
+Update 22/05/2018 – A refined version with fewer columns to improve processing.
+Update 28/11/2017 – Clearance rates have started decreasing. Is this a pattern or just noise?
+This dataset provides insights into Melbourne's housing market trends, including suburb pricing, regional variations, and historical transaction data.
+________________________________________
+
+Dataset Overview
+This dataset was scraped from publicly available real estate records from Domain.com.au and includes:
+•	Property details (address, type, rooms, price, sale method)
+•	Real estate agency information
+•	Date of sale and distance from CBD
+•	Additional attributes like building area, land size, and council area
+
+Key Features
+Property Details
+•	Suburb – Location of the property
+•	Address – Full property address
+•	Rooms – Number of rooms
+•	Price – Sale price in AUD
+•	Type – Property classification:
+o	br – Bedroom(s)
+o	h – House, cottage, villa, terrace
+o	u – Unit, duplex
+o	t – Townhouse
+o	dev site – Development site
+o	o res – Other residential
+•	Method – Sale method:
+o	S – Sold
+o	SP – Sold prior
+o	PI – Passed in
+o	PN – Sold prior (not disclosed)
+o	SN – Sold (not disclosed)
+o	NB – No bid
+o	VB – Vendor bid
+o	W – Withdrawn prior to auction
+o	SA – Sold after auction
+o	SS – Sold after auction (price not disclosed)
+o	N/A – Price or bid not available
+
+Market & Location Details
+•	SellerG – Real estate agent or agency
+•	Date – Sale date
+•	Distance – Distance from Melbourne CBD (km)
+•	Regionname – General region classification (e.g., North, West, Southeast)
+•	Propertycount – Total properties in the suburb
+
+Structural Features
+•	Bedroom2 – Number of bedrooms (from alternative source)
+•	Bathroom – Number of bathrooms
+•	Car – Number of car spaces
+•	Landsize – Land size (sqm)
+•	BuildingArea – Building size (sqm)
+•	YearBuilt – Year of construction
+•	CouncilArea – Local governing council
+
+Geolocation Data
+•	Latitude – Property latitude
+•	Longitude – Property longitude
+
