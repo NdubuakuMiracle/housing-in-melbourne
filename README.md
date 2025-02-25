@@ -1,4 +1,4 @@
-# Beyond the Price Tag: Predicting Melbourne House Prices
+# Housing In Melbourne: Beyond the Price Tag
 
 ## 📌 Project Overview  
 In this project, I developed a **machine learning model** to predict **house prices in Melbourne, Australia**. The model takes in **suburb, building area, latitude, and longitude** to generate property price estimates in USD.  
