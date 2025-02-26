@@ -100,7 +100,7 @@ Click below to open:
 
 ### 🚀 How to Use:
 1️⃣ **Click the "Open in Colab" button** above.  
-2️⃣ **Run all cells** to load `X_train.csv` & `model.pkl` directly from GitHub.  
+2️⃣ **Run all cells** to load `X_test.csv` & `model.pkl` directly from GitHub.  
 3️⃣ **Use the interactive widget to predict house prices!**  
 
 ---
