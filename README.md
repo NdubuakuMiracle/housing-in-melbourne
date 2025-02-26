@@ -102,7 +102,7 @@ This project features an **interactive price prediction widget** inside a Jupyte
 A **Flask API** is deployed on Render for real-time predictions.  
 
 ### Try the Live Flask API  
-[![Open Flask App](https://img.shields.io/badge/Open%20Flask%20App-Click%20Here-brightgreen)](https://housing-in-melbourne.onrender.com)  
+[![Flask App](https://img.shields.io/badge/Live%20Demo-Flask%20App-brightgreen)](https://housing-in-melbourne.onrender.com)  
 
 ### 📡 API Usage  
 **Endpoint:**  
