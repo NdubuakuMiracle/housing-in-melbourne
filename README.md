@@ -91,14 +91,12 @@ Detailed EDA visualizations (scatter plots, maps, and histograms) are included i
 ## 🚀 Model Deployment  
 
 ### **1️⃣ Interactive Jupyter Widget (Google Colab)**  
-To use the interactive price prediction widget, open the notebook on **Google Colab**:  
-
-## 🎛 Try the Interactive Widget on Google Colab
+To use the interactive price prediction widget,  
 Click below to open:
 
-[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOUR_USERNAME/NdubuakuMiracle/housing-in-melbourne/blob/main/reports/app/deployed_interactive_widget.ipynb)
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/NdubuakuMiracle/housing-in-melbourne/blob/main/reports/app/deployed_interactive_widget.ipynb)
 
-### 🚀 How to Use:
+### How to Use:
 1️⃣ **Click the "Open in Colab" button** above.  
 2️⃣ **Run the first cell** to mount Google Drive.  
 3️⃣ **The notebook will automatically load `X_train.csv` & `model.pkl` from Drive.**  
