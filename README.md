@@ -93,13 +93,17 @@ Detailed EDA visualizations (scatter plots, maps, and histograms) are included i
 ### **1️⃣ Interactive Jupyter Widget (Google Colab)**  
 To use the interactive price prediction widget, open the notebook on **Google Colab**:  
 
-[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/your-username/your-repo/blob/main/beyond_the_price_tag_notebook.ipynb)  
+## 🎛 Try the Interactive Widget on Google Colab
+Click below to open:
 
-#### **Steps to Use on Colab:**  
-1. Open the notebook.  
-2. Upload `X_train.csv` and `price_by_sub_area_lat_lon_model.pkl`.  
-3. Run all cells to load the model.  
-4. Use the **interactive widget** to predict house prices.
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOUR_USERNAME/NdubuakuMiracle/housing-in-melbourne/blob/main/reports/app/deployed_interactive_widget.ipynb)
+
+### 🚀 How to Use:
+1️⃣ **Click the "Open in Colab" button** above.  
+2️⃣ **Run the first cell** to mount Google Drive.  
+3️⃣ **The notebook will automatically load `X_train.csv` & `model.pkl` from Drive.**  
+4️⃣ **Use the interactive widget to predict house prices!**  
+
 
 ---
 
