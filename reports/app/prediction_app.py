@@ -40,9 +40,8 @@ def home():
         )
         df = df[model.feature_names_in_]  # Ensure correct feature order
         prediction = model.predict(df).round(2)[0]  # Get prediction
-        formatted_price = f"{prediction:,.2f}"  # Format with commas & 2 decimal places
 
-    return render_template("index.html", suburbs=suburbs, prediction=formatted_price)
+    return render_template("index.html", suburbs=suburbs, prediction=prediction)
 
 
 if __name__ == "__main__":
