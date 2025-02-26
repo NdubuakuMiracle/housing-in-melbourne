@@ -11,7 +11,7 @@ data_path = os.path.abspath("../../data/processed/X_test.csv")
 model = joblib.load(model_path)
 
 # Load dataset
-X_train = pd.read_csv(data_path)
+X_test = pd.read_csv(data_path)
 
 # Initialize Flask app
 app = Flask(__name__)
@@ -42,7 +42,7 @@ def home():
         prediction = model.predict(df).round(2)[0]  # Get prediction
         formatted_price = f"${prediction:,.2f}"  # Format with commas & 2 decimal places
 
-    return render_template("index.html", suburbs=suburbs, prediction=prediction)
+    return render_template("index.html", suburbs=suburbs, prediction=formatted_price)
 
 
 if __name__ == "__main__":
