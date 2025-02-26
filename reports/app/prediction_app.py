@@ -5,7 +5,7 @@ import os
 
 # Correct file paths
 model_path = os.path.abspath("../../models/price_by_sub_area_lat_lon_model.pkl")
-data_path = os.path.abspath("../../data/processed/X_train.csv")
+data_path = os.path.abspath("../../data/processed/X_test.csv")
 
 # Load trained model
 model = joblib.load(model_path)
