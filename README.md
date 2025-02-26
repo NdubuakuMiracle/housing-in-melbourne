@@ -104,12 +104,12 @@ A **Flask API** is deployed on Render for real-time predictions.
 ### Try the Live Flask API  
 [![Open Flask App](https://img.shields.io/badge/Open%20Flask%20App-Click%20Here-brightgreen)](https://housing-in-melbourne.onrender.com)  
 
-#### API Usage  
+### 📡 API Usage  
 **Endpoint:**  
-```http
 POST https://housing-in-melbourne.onrender.com/predict
+
 #### **Example Request:**
-```json
+json
 {
   "Suburb": "Richmond",
   "BuildingArea": 150,
