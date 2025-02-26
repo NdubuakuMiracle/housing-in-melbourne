@@ -91,23 +91,37 @@ Detailed EDA visualizations (scatter plots, maps, and histograms) are included i
 ## 🚀 Model Deployment  
 
 ### **1️⃣ Interactive Jupyter Widget (Google Colab)**  
-To use the interactive price prediction widget,  
+To use the interactive price prediction widget, open the notebook on **Google Colab**:  
+
+## 🎛 Try the Interactive Widget on Google Colab
 Click below to open:
 
-[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/NdubuakuMiracle/housing-in-melbourne/blob/main/reports/app/deployed_interactive_widget.ipynb)
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOUR_USERNAME/housing-in-melbourne/blob/main/reports/app/deployed_interactive_widget.ipynb)
 
-### How to Use:
+### 🚀 How to Use:
 1️⃣ **Click the "Open in Colab" button** above.  
-2️⃣ **Run the first cell** to mount Google Drive.  
-3️⃣ **The notebook will automatically load `X_train.csv` & `model.pkl` from Drive.**  
-4️⃣ **Use the interactive widget to predict house prices!**  
-
+2️⃣ **Run all cells** to load `X_train.csv` & `model.pkl` directly from GitHub.  
+3️⃣ **Use the interactive widget to predict house prices!**  
 
 ---
 
-### **2️⃣ Flask API**  
-I also deployed a Flask web app for making predictions via API.
+### **2️⃣ Flask API (Deployed on Render)**  
+I also deployed a **Flask web app** for making predictions via API.
 
-#### **How to Run Flask Locally**  
-```sh
-python app.py
+## 🌍 Try the Live Flask API
+Click below to test the Flask web app:
+
+[![Open Flask App](https://img.shields.io/badge/Open%20Flask%20App-Click%20Here-brightgreen)]([https://your-app.onrender.com](https://housing-in-melbourne.onrender.com))
+
+### 📡 API Usage  
+**Endpoint:**  
+`POST https://housing-in-melbourne.onrender.com/predict`
+
+#### **Example Request:**
+```json
+{
+  "Suburb": "Richmond",
+  "BuildingArea": 150,
+  "Latitude": -37.81,
+  "Longitude": 144.99
+}
