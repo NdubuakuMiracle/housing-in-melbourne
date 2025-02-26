@@ -111,7 +111,7 @@ I also deployed a **Flask web app** for making predictions via API.
 ## 🌍 Try the Live Flask API
 Click below to test the Flask web app:
 
-[![Open Flask App](https://img.shields.io/badge/Open%20Flask%20App-Click%20Here-brightgreen)](https://housing-in-melbourne.onrender.com))
+[![Open Flask App](https://img.shields.io/badge/Open%20Flask%20App-Click%20Here-brightgreen)](https://housing-in-melbourne.onrender.com)
 
 ### 📡 API Usage  
 **Endpoint:**  
