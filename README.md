@@ -93,10 +93,10 @@ Detailed EDA visualizations (scatter plots, maps, and histograms) are included i
 ### **1️⃣ Interactive Jupyter Widget (Google Colab)**  
 To use the interactive price prediction widget, open the notebook on **Google Colab**:  
 
-## 🎛 Try the Interactive Widget on Google Colab
+### 🎛 Try the Interactive Widget on Google Colab
 Click below to open:
 
-[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOUR_USERNAME/housing-in-melbourne/blob/main/reports/app/deployed_interactive_widget.ipynb)
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/NdubuakuMiracle/housing-in-melbourne/blob/main/reports/app/deployed_interactive_widget.ipynb)
 
 ### 🚀 How to Use:
 1️⃣ **Click the "Open in Colab" button** above.  
@@ -108,7 +108,7 @@ Click below to open:
 ### **2️⃣ Flask API (Deployed on Render)**  
 I also deployed a **Flask web app** for making predictions via API.
 
-## 🌍 Try the Live Flask API
+### 🌍 Try the Live Flask API
 Click below to test the Flask web app:
 
 [![Open Flask App](https://img.shields.io/badge/Open%20Flask%20App-Click%20Here-brightgreen)](https://housing-in-melbourne.onrender.com)
