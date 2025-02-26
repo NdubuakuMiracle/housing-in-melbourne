@@ -1,18 +1,11 @@
-# Core Data Processing Libraries
-numpy                 # Numerical computations & array operations
-pandas                # Data manipulation & analysis
-
-# Data Visualization
-matplotlib            # Basic plotting & visualization
-seaborn               # Statistical data visualization
-plotly                # Interactive visualizations for EDA & reports
-
-# Machine Learning & Model Deployment
-scikit-learn          # Machine learning models & preprocessing utilities
-joblib                # Model serialization & persistence
-category_encoders     # Encoding categorical variables for ML models
-
-# Interactive & Web App Deployment
-ipywidgets            # Jupyter interactive widgets for price prediction
-flask                 # API deployment for serving model predictions
+numpy
+pandas
+matplotlib
+seaborn
+plotly
+scikit-learn
+joblib
+category_encoders
+ipywidgets
+flask
 gunicorn
