@@ -20,7 +20,7 @@ app = Flask(__name__)
 @app.route("/", methods=["GET", "POST"])
 def home():
     prediction = None  # Default value
-    suburbs = sorted(X_train["Suburb"].unique())  # Get suburb list
+    suburbs = sorted(X_test["Suburb"].unique())  # Get suburb list
 
     if request.method == "POST":
         # Get form values
@@ -40,7 +40,7 @@ def home():
         )
         df = df[model.feature_names_in_]  # Ensure correct feature order
         prediction = model.predict(df).round(2)[0]  # Get prediction
-        formatted_price = f"${prediction:,.2f}"  # Format with commas & 2 decimal places
+        formatted_price = f"{prediction:,.2f}"  # Format with commas & 2 decimal places
 
     return render_template("index.html", suburbs=suburbs, prediction=formatted_price)
 
