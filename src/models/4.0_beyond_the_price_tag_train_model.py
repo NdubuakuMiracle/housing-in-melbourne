@@ -11,7 +11,7 @@ from sklearn.utils.validation import check_is_fitted
 from ipywidgets import Dropdown, FloatSlider, IntSlider, interact
 import sys
 
-sys.path.append("../data/updated_wrangle_module.py")
+sys.path.append("../../src/data")
 # Import the DataTransformer class from the 'updated_wrangle_module.py' file
 from updated_wrangle_module import DataTransformer
 
@@ -136,7 +136,7 @@ def price_predictor(suburb, area, latitude, longitude):
     }
     df = pd.DataFrame(data, index=[0])
     prediction = model.predict(df).round(2)[0]
-    return f"Predicted House price: ${prediction}"
+    return f"Predicted House Price: ${prediction}"
 
 
 # ----------------------------------------------------------------------------------------------
@@ -181,11 +181,14 @@ interact(
 
 
 # ----------------------------------------------------------------------------------------------
-# 8. Save and export the X_train features and the model
+# 8. Save and export the X_train, X_test features and the model
 # ----------------------------------------------------------------------------------------------
 
 # Export X_train to the 'data' folder as a CSV file
 X_train.to_csv("../../data/processed/X_train.csv", index=False)
+
+# Export X_test to the 'data' folder as a CSV file
+X_test.to_csv("../../data/processed/X_test.csv", index=False)
 
 # Save the model to 'models' folder using joblib
 joblib.dump(model, "../../models/price_by_sub_area_lat_lon_model.pkl")
