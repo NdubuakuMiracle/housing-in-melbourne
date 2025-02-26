@@ -108,33 +108,31 @@
     <h1>🏡 House Price Predictor</h1>
     <p>Enter details to get an estimated price for a house in Melbourne.</p>
 
-<div class="form-container">
-    <form action="/" method="POST">
-        <label for="suburb">Suburb:</label>
-        <select name="suburb" required>
-            {% for suburb in suburbs %}
-                <option value="{{ suburb }}" {% if input_data.suburb == suburb %}selected{% endif %}>
-                    {{ suburb }}
-                </option>
-            {% endfor %}
-        </select>
+    <div class="form-container">
+        <form action="/" method="POST">
+            <label for="suburb">Suburb:</label>
+            <select name="suburb" required>
+                {% for suburb in suburbs %}
+                    <option value="{{ suburb }}">{{ suburb }}</option>
+                {% endfor %}
+            </select>
 
-        <label for="area">Building Area (sqm):</label>
-        <input type="number" name="area" min="10" required value="{{ input_data.area }}">
+            <label for="area">Building Area (sqm):</label>
+            <input type="number" name="area" min="10" required>
 
-        <label for="latitude">Latitude:</label>
-        <input type="number" step="0.0001" name="latitude" required value="{{ input_data.latitude }}">
+            <label for="latitude">Latitude:</label>
+            <input type="number" step="0.0001" name="latitude" required>
 
-        <label for="longitude">Longitude:</label>
-        <input type="number" step="0.0001" name="longitude" required value="{{ input_data.longitude }}">
+            <label for="longitude">Longitude:</label>
+            <input type="number" step="0.0001" name="longitude" required>
 
-        <button type="submit" class="btn-submit">🔍 Predict Price</button>
-    </form>
-</div>
+            <button type="submit" class="btn-submit">🔍 Predict Price</button>
+        </form>
+    </div>
 
     {% if prediction %}
         <div class="prediction">
-            <h2>Predicted House Price: {{ prediction }}</h2>
+            <h2>Predicted House Price: ${{ prediction }}</h2>
         </div>
     {% endif %}
 
