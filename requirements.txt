@@ -15,3 +15,4 @@ category_encoders     # Encoding categorical variables for ML models
 # Interactive & Web App Deployment
 ipywidgets            # Jupyter interactive widgets for price prediction
 flask                 # API deployment for serving model predictions
+gunicorn
