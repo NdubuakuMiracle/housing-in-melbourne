@@ -1,3 +1,5 @@
+flask
+gunicorn
 numpy
 pandas
 matplotlib
@@ -7,5 +9,3 @@ scikit-learn
 joblib
 category_encoders
 ipywidgets
-flask
-gunicorn
