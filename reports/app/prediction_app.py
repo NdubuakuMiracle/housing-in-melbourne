@@ -19,29 +19,42 @@ app = Flask(__name__)
 
 @app.route("/", methods=["GET", "POST"])
 def home():
-    prediction = None  # Default value
-    suburbs = sorted(X_test["Suburb"].unique())  # Get suburb list
+    prediction = None
+    input_suburb = ""
+    input_area = ""
+    input_lat = ""
+    input_lon = ""
+    suburbs = sorted(X_test["Suburb"].unique())
 
     if request.method == "POST":
         # Get form values
-        suburb = request.form["suburb"]
-        area = float(request.form["area"])
-        latitude = float(request.form["latitude"])
-        longitude = float(request.form["longitude"])
+        input_suburb = request.form["suburb"]
+        input_area = float(request.form["area"])
+        input_lat = float(request.form["latitude"])
+        input_lon = float(request.form["longitude"])
 
-        # Create DataFrame for model prediction
+        # Create DataFrame
         df = pd.DataFrame(
             {
-                "Suburb": [suburb],
-                "BuildingArea": [area],
-                "Latitude": [latitude],
-                "Longitude": [longitude],
+                "Suburb": [input_suburb],
+                "BuildingArea": [input_area],
+                "Latitude": [input_lat],
+                "Longitude": [input_lon],
             }
         )
-        df = df[model.feature_names_in_]  # Ensure correct feature order
-        prediction = model.predict(df).round(2)[0]  # Get prediction
+        df = df[model.feature_names_in_]
+        prediction = model.predict(df).round(2)[0]
+        prediction = f"{prediction:,.2f}"  # format like $1,200,000.00
 
-    return render_template("index.html", suburbs=suburbs, prediction=prediction)
+    return render_template(
+        "index.html",
+        suburbs=suburbs,
+        prediction=prediction,
+        input_suburb=input_suburb,
+        input_area=input_area,
+        input_lat=input_lat,
+        input_lon=input_lon,
+    )
 
 
 if __name__ == "__main__":
